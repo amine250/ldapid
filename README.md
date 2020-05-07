@@ -12,5 +12,5 @@ It uses a test LDAP server provided by [forumsys.com](https://www.forumsys.com/t
 ## How to use with Docker
 * Clone the project
 * Run `cd ldapid && docker build . -t amine250/ldapid` or `docker pull amine250/ldapid`
-* Run `docker run -it -p 3000:3000 amine250/ldapid`
+* Run `docker run --init -p 3000:3000 amine250/ldapid`
 * Test with `curl localhost:3000/auth/login --data 'uid=tesla'`  
