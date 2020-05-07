@@ -5,4 +5,4 @@ ADD src/ /app/
 RUN cd /app && npm install
 
 EXPOSE 3000
-CMD [ "node", "/app/server.js" ]
+CMD [ "node", "/app/index.js" ]
